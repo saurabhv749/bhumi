@@ -1,0 +1,112 @@
+.hero {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  background-color: #5f3b0b;
+  svg {
+    padding: 2vw;
+    vertical-align: middle;
+    opacity: 0;
+    g {
+      transform-origin: 50% 50%;
+    }
+  }
+
+  .logo {
+    font-size: clamp(4vw, 120px, 18vw);
+    font-family: clashdisplay-medium;
+    font-weight: light;
+    fill: aliceblue;
+  }
+
+  &_title {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+  }
+
+  &_video_curtain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: #413b33;
+  }
+
+  &_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// sidebyside
+
+.side-by-side {
+  padding: 10vw 2vw;
+  .images {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    .img {
+      flex: 1;
+      max-width: 300px;
+      margin: 1vw 1vh;
+      aspect-ratio: 0.7;
+      position: relative;
+      overflow: hidden;
+      .cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #fff;
+
+        z-index: 1;
+      }
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+// text
+.upper {
+  color: #333;
+  font-size: clamp(4vw, 30px, 5vw);
+  // font-family: clashdisplay-medium;
+  font-weight: 400;
+  text-align: center;
+}
+.italic {
+  font-size: 4vw;
+  color: #555;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: 400;
+  font-family: bigdailyshort-lightitalic;
+  width: 100%;
+}
+
+.decor {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}

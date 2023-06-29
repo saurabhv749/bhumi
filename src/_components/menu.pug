@@ -1,0 +1,26 @@
+.fs-menu
+  header#nav
+    include miniLogo
+
+    a.menu_btn.close 
+      include arrow-right
+      .btn
+        .cover 
+        p CLOSE
+
+  section 
+    .links 
+      - const items = ['WORK','AWARDS','CONTACT']
+      - for(let i of items)
+          a(href=("#"+i)).nav 
+            .cover 
+            h1.upper
+              span.count.letter  #{items.indexOf(i)+1}. 
+              - for(let ch of i)
+                  span(class='letter')!= ch
+            
+          
+    .thumbs
+      .wrapper 
+        
+  

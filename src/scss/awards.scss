@@ -1,0 +1,63 @@
+/* awards */
+
+.awards {
+  width: 90%;
+  max-width: 1080px;
+  margin: 2rem auto;
+  color: #52523a;
+
+  h1 {
+    font-size: 4rem;
+    font-family: var(--ff-2);
+  }
+  p {
+    font-size: 2rem;
+    margin-bottom: 10vh;
+    font-family: var(--ff-3);
+  }
+
+  table {
+    margin: 2rem auto;
+    display: block;
+    font-family: var(--ff-2);
+    color: rgb(80, 65, 46);
+  }
+
+  caption {
+    text-align: left;
+    width: 100%;
+    font-size: 1.4rem;
+    // margin-bottom: 1rem;
+    display: block;
+    font-weight: bold;
+  }
+
+  tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(80, 65, 46, 0.2);
+
+    &:nth-of-type(2n) {
+      background-color: rgba(80, 65, 46, 0.1);
+    }
+  }
+
+  td {
+    flex: 1;
+    padding: 5px 10px;
+  }
+}
+// magzines
+.mags {
+  display: flex;
+  overflow-x: scroll;
+  width: 100vw;
+  flex-wrap: nowrap;
+  img {
+    display: inline-block;
+    // width: 50%;
+    height: 60vh;
+    margin: 1rem;
+  }
+}

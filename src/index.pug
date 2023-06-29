@@ -1,0 +1,70 @@
+head 
+    title BHUMI 
+body
+    #loader
+        .lds-ripple
+            div 
+            div
+    #content
+        div(class='hero')
+            include _components/heroTitle
+            h1.hero_sub
+                span.hero_sub_upper  CONSIDERED CREATIVE
+                span.hero_sub_italic for Elevated Brands.
+
+            
+            div(class='hero_video_curtain')
+            div(class='hero_video')
+                h1.mini_sub
+                    span.mini_sub_upper  CONSIDERED CREATIVE
+                    span.mini_sub_italic for Elevated Brands.
+                video( playsinline autoplay muted loop) 
+            
+        .container
+            //- header
+            header#nav
+                include _components/miniLogo
+
+                a.menu_btn 
+                    include _components/menuButton
+                    .btn 
+                        .cover 
+                        p MENU
+            
+            //- sidebyside
+            include _components/intro
+            
+            //- parallax gallery
+            include _components/parallax
+            
+            h2.featured#WORK FEATURED IN
+            section.mags 
+                
+            //- fullscreen
+            h2.movies__title MOVIES
+            section.movies.fs
+                //- desktop
+                .fs-images
+                .fs-titles 
+                //- mobile
+
+
+            //- showcase grid (150x250)
+            .sc-grid
+                    .sc-header 
+                        .sc-title
+                            h2.upper PHOTOSHOOTS
+                        .sc-sub 
+                            p 10
+                            include _components/arrow-down
+                    .sc-items 
+            //- include _components/awards
+            .awards#AWARDS
+                h1 Awards
+                p Showing all 25 wins and 20 nominations
+    
+        include _components/footer
+        
+    include _components/menu
+
+    script(src="js/app.js" type='module') 

@@ -1,0 +1,24 @@
+@font-face {
+  font-family: clashdisplay-medium;
+  src: url(fonts/ClashDisplay-Medium.woff2) format("woff2");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: surt-regular;
+  src: url(fonts/Surt-Regular.woff2) format("woff2");
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: bigdailyshort-lightitalic;
+  src: url(fonts/BigDailyShort-LightItalic.woff2) format("woff2");
+  font-display: swap;
+  font-style: normal;
+}
+
+:root {
+  --ff-1: clashdisplay-medium;
+  --ff-2: surt-regular;
+  --ff-3: bigdailyshort-lightitalic;
+}

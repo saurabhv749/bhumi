@@ -1,0 +1,72 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-overflow-scrolling: touch;
+  font-family: sans-serif;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+#content {
+  overflow: hidden scroll;
+  height: 100vh;
+  position: relative;
+}
+
+// svg
+
+.hero_sub,
+.mini_sub {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  z-index: 1;
+  width: 100%;
+  transform: translate(-50%, 0%);
+
+  span {
+    display: block;
+    text-align: center;
+    color: #fff;
+  }
+
+  &_upper {
+    letter-spacing: 0.02em;
+    font-size: 6vw;
+    font-family: clashdisplay-medium;
+    font-weight: 400;
+  }
+  &_italic {
+    font-size: 5vw;
+    letter-spacing: 0.02em;
+    font-weight: 200;
+    font-family: bigdailyshort-lightitalic;
+  }
+}
+
+.mini_sub {
+  bottom: 40%;
+
+  &_upper {
+    opacity: 0;
+    font-size: 4vw;
+    transform: translateY(-10%);
+  }
+  &_italic {
+    opacity: 0;
+    font-size: 3vw;
+    transform: translateY(10%);
+  }
+}
+
+.container {
+  padding: 2vw;
+}
+
+// util
+.mr-auto {
+  margin-right: auto;
+}
+.ml-auto {
+  margin-left: auto;
+}

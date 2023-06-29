@@ -1,0 +1,63 @@
+// parallax gallery
+
+.gal_img_cont {
+  // background: aliceblue;
+  margin-bottom: 30vh;
+
+  .row {
+    display: flex;
+    align-items: flex-end;
+    margin: 1vh 0;
+    .item {
+      width: 50%;
+      // overflow: hidden;
+
+      #des {
+        z-index: 3;
+        color: #646434;
+        // font-size: ;
+        text-align: left;
+        text-transform: uppercase;
+        span {
+          // width: 200px;
+          display: block;
+          width: fit-content;
+          margin-left: 20px;
+          padding: 10px;
+          outline: #444 solid 1px;
+          color: #646434;
+          font-weight: bold;
+        }
+      }
+
+      img {
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+      }
+    }
+    // first
+    &:first-child {
+      height: 80vh;
+    }
+    &:nth-child(2),
+    &:nth-child(4) {
+      height: 70vh;
+      padding-left: 100px;
+    }
+    &:nth-child(3) {
+      height: 55vh;
+      transform: translateX(-5%);
+      padding-left: 100px;
+    }
+    &:nth-child(5),
+    &:nth-child(6) {
+      transform: translateX(-5%);
+      height: 55vh;
+    }
+    &:nth-child(7) {
+      height: 70vh;
+      transform: translateX(-5%);
+    }
+  }
+}

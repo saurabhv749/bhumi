@@ -1,0 +1,72 @@
+// showcase grid
+.sc-grid {
+  // background-color: cornsilk;
+  padding: 15vh 0;
+}
+.sc-header {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  // padding-bottom: 10vh;
+  z-index: 4;
+  opacity: 0.7;
+  .sc-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    svg {
+      width: 4vw;
+      height: 4vw;
+    }
+  }
+  h2,
+  p {
+    font-size: 8vw;
+    font-family: sans-serif;
+    color: #52523a;
+  }
+  p {
+    font-size: 4vw;
+  }
+}
+
+.sc-items {
+  $item-h: 250px;
+  $item-w: 150px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 3vw;
+  pointer-events: none;
+
+  .item {
+    position: relative;
+    height: $item-h;
+    width: $item-w;
+    overflow: hidden;
+    margin: auto;
+    // outline: 5px solid #cacab0;
+
+    .sc-f {
+      z-index: 1;
+    }
+    .sc-s {
+      z-index: 2;
+    }
+    .sc-t {
+      z-index: 3;
+    }
+
+    .sc-f,
+    .sc-s,
+    .sc-t {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      height: $item-h;
+      width: $item-w;
+      object-fit: cover;
+      transform-origin: 50% 50%;
+    }
+  }
+}
