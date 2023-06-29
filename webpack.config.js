@@ -14,7 +14,6 @@ const config = {
       filename: "index.html",
       inject: "body",
     }),
-    // new HtmlWebpackPugPlugin(),
     new MiniCssExtractPlugin({ filename: "style.css" }),
   ],
   module: {
