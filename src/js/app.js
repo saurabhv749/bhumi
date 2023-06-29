@@ -8,6 +8,7 @@ import images from "./data/images.js";
 
 // styles
 import "../scss/style.scss";
+import { start } from "repl";
 
 gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
@@ -714,16 +715,20 @@ function addPhotoshoot() {
   }
 }
 
-//
-addVideoSrc();
-addMenu();
-addParallax();
-addPhotoshoot();
-addFooterWall();
-addMags();
-addIntro();
-addMovies();
-addTable();
-addTriggers();
-addShowcaseTrigger();
-addFooterLinkAnimation();
+function start() {
+  //
+  addVideoSrc();
+  addMenu();
+  addParallax();
+  addPhotoshoot();
+  addFooterWall();
+  addMags();
+  addIntro();
+  addMovies();
+  addTable();
+  addTriggers();
+  addShowcaseTrigger();
+  addFooterLinkAnimation();
+}
+
+start();
